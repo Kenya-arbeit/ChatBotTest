@@ -41,7 +41,7 @@ public class EchoDialog : IDialog<object>
         }
         else
         {
-            await context.PostAsync($"You said {message.Text} and string length was {message.Text.length()}");
+            await context.PostAsync($"You said {message.Text} and string length was {message.Text.Length}");
             context.Wait(MessageReceivedAsync);
         }
     }
